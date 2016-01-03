@@ -1,5 +1,5 @@
 #lofteam by androidLogSnapshot
 
 ```phthon
-python hy.panic.py error.txt //androidsoucedirectory input this command
+python panic.py error.txt //androidsoucedirectory input this command
 ```
