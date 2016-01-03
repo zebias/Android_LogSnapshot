@@ -1,0 +1,16 @@
+#### 抱歉,进程"com.android.phone"已停止运行
+01-03 11:35:34.906 E/SambaConnector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:34.907 E/SambaConnector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+01-03 11:35:34.909 E/SambaClientConnector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:34.910 E/SambaClientConnector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+01-03 11:35:34.924 E/flymed_connector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:34.925 E/flymed_connector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+01-03 11:35:39.611 W/ActivityManager(  601): getRunningAppProcesses: caller 10067 does not hold REAL_GET_TASKS; limiting output
+01-03 11:35:39.909 E/SambaConnector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:39.910 E/SambaConnector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+01-03 11:35:39.911 E/SambaClientConnector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:39.912 E/SambaClientConnector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+01-03 11:35:39.927 E/flymed_connector(  601): Communications error: java.io.IOException: No such file or directory
+01-03 11:35:39.927 E/flymed_connector(  601): Error in NativeDaemonConnector: java.io.IOException: No such file or directory
+
+/*解决办法*/
