@@ -4,7 +4,6 @@
 * 实时获取App日志、Radio日志
 * 执行shell命令
 * 抓取手机图片。
-截图展示
-![说明文字](../images/algn.png)
+![截图展示](../images/algn.png)
 
 参考文献：http://sourceforge.net/p/androidlogger/
