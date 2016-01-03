@@ -1,3 +1,3 @@
 # lofteam
- Compile cm13 i9300 by yanyu
-#####QQ:1182804329 添加大神进行讨论
+ Compile CM13 i9300 By yanyu
+#####QQ:1182804329 add+
