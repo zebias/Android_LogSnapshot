@@ -90,7 +90,6 @@ private void forSense(){
         listStr.add("现在轮到我上场乐");
     }
 }
-'''
 '''smali
 .line 40
     const/4 v0, 0x0
@@ -118,4 +117,3 @@ private void forSense(){
 ###文字描述：设定一个标签goto_0, 判断v0小于v3, 符合执行分支:cond_0 ,然后又跑回:goto_0做继续判断
 
 参考自：http://www.cnblogs.com/lee0oo0/p/3728271.html
-'''
