@@ -1,5 +1,5 @@
 #Smali 基本语法
-'''smali
+```smali
 .field private isFlag:z　　定义变量
 
 .method　　方法
@@ -27,7 +27,7 @@ iput-object　　对象赋值
 iget-object　　调用对象
 
 invoke-static　　调用静态函数
-'''
+```
 条件跳转分支：
 
 * "if-eq vA, vB, :cond_**"   如果vA等于vB则跳转到:cond_**
@@ -44,7 +44,7 @@ invoke-static　　调用静态函数
 * "if-lez vA, :cond_**"    如果vA小于等于0则跳转到:cond_**
 
 if函数的java代码：
-'''java
+```java
 private boolean ifSense(){
         boolean tempFlag = ((3-2)==1)? true : false;
         if (tempFlag) {
@@ -53,8 +53,8 @@ private boolean ifSense(){
             return false;
         }
     }
-'''
-'''smali
+```
+```smali
 .method private ifSense()Z
     .locals 2
 
@@ -78,19 +78,20 @@ private boolean ifSense(){
 
     goto :goto_0
 .end method
-
+```
 ###文字描述：如果符合if分支则程序往下走，最终return ; 而如果条件不符合则会走到 :cond_0分支 , 最终执行 goto :goto_0走回 :goto_0返回
-'''
+
 
 for函数java代码：
-'''java
+```java
 private void forSense(){
     listStr = new ArrayList<String>(COUNT);
     for (int i = 0; i < COUNT; i++) {
         listStr.add("现在轮到我上场乐");
     }
 }
-'''smali
+```
+```smali
 .line 40
     const/4 v0, 0x0
 
@@ -113,7 +114,7 @@ private void forSense(){
     add-int/lit8 v0, v0, 0x1　　　　// 将第二个v0寄存器中的值，加上0x1的值放入第一个寄存器中, 实现自增长
 
     goto :goto_0                // 回去:goto_0标签
-
+```
 ###文字描述：设定一个标签goto_0, 判断v0小于v3, 符合执行分支:cond_0 ,然后又跑回:goto_0做继续判断
 
 参考自：http://www.cnblogs.com/lee0oo0/p/3728271.html
