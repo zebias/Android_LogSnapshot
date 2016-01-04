@@ -30,18 +30,18 @@ invoke-static　　`调用静态函数`
 ```
 #####条件跳转分支：
 
-* "if-eq vA, vB, :cond_**"    如果vA等于vB则跳转到:cond_**
-* "if-ne vA, vB, :cond_**"    如果vA不等于vB则跳转到:cond_**
-* "if-lt vA, vB, :cond_**"    如果vA小于vB则跳转到:cond_**
-* "if-ge vA, vB, :cond_**"    如果vA大于等于vB则跳转到:cond_**
-* "if-gt vA, vB, :cond_**"    如果vA大于vB则跳转到:cond_**
-* "if-le vA, vB, :cond_**"    如果vA小于等于vB则跳转到:cond_**
-* "if-eqz vA, :cond_**"   	  如果vA等于0则跳转到:cond_**
-* "if-nez vA, :cond_**"       如果vA不等于0则跳转到:cond_**
-* "if-ltz vA, :cond_**"       如果vA小于0则跳转到:cond_**
-* "if-gez vA, :cond_**"       如果vA大于等于0则跳转到:cond_**
-* "if-gtz vA, :cond_**"       如果vA大于0则跳转到:cond_**
-* "if-lez vA, :cond_**"       如果vA小于等于0则跳转到:cond_**
+* "if-eq vA, vB, :cond_**"		如果vA等于vB则跳转到:cond_**
+* "if-ne vA, vB, :cond_**"		如果vA不等于vB则跳转到:cond_**
+* "if-lt vA, vB, :cond_**"		如果vA小于vB则跳转到:cond_**
+* "if-ge vA, vB, :cond_**"		如果vA大于等于vB则跳转到:cond_**
+* "if-gt vA, vB, :cond_**"		如果vA大于vB则跳转到:cond_**
+* "if-le vA, vB, :cond_**"		如果vA小于等于vB则跳转到:cond_**
+* "if-eqz vA, :cond_**"   		如果vA等于0则跳转到:cond_**
+* "if-nez vA, :cond_**"   		如果vA不等于0则跳转到:cond_**
+* "if-ltz vA, :cond_**"   		如果vA小于0则跳转到:cond_**
+* "if-gez vA, :cond_**"   		如果vA大于等于0则跳转到:cond_**
+* "if-gtz vA, :cond_**"   		如果vA大于0则跳转到:cond_**
+* "if-lez vA, :cond_**"   		如果vA小于等于0则跳转到:cond_**
 
 if函数的java代码：
 ```java
@@ -80,7 +80,7 @@ Smali code:
     goto :goto_0
 .end method
 ```
-###文字描述：如果符合if分支则程序往下走，最终return ; 而如果条件不符合则会走到 :cond_0分支 , 最终执行 goto :goto_0走回 :goto_0返回
+#####文字描述：如果符合if分支则程序往下走，最终return ; 而如果条件不符合则会走到 :cond_0分支 , 最终执行 goto :goto_0走回 :goto_0返回
 
 
 for函数java代码：
@@ -117,6 +117,6 @@ Smali code:
 
     goto :goto_0                			// 回去:goto_0标签
 ```
-###文字描述：设定一个标签goto_0, 判断v0小于v3, 符合执行分支:cond_0 ,然后又跑回:goto_0做继续判断
+#####文字描述：设定一个标签goto_0, 判断v0小于v3, 符合执行分支:cond_0 ,然后又跑回:goto_0做继续判断
 
 参考自：http://www.cnblogs.com/lee0oo0/p/3728271.html
